@@ -1,11 +1,10 @@
 name: My first workflow
 on: workflow_dispatch
-	jobs: 
-    runs-on: ubuntu-22.04
-    steps:
-    - name: install a package php
-      run: |
-        sudo apt update  
-        sudo apt install php -y
-        php --version
-      
+jobs:
+   runs-on: ubuntu-24.04
+   steps:
+   - name: Install a package php
+     run: |
+    sudo apt update
+    sudo apt install php -y
+    php --version
